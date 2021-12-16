@@ -14,6 +14,7 @@ function Home() {
         setLoading(false);
         console.log(json)
     };
+    const genres = moive.genres
     useEffect(() => {
         getMovies();
     }, []);
@@ -30,7 +31,7 @@ function Home() {
                             coverImg={movie.medium_cover_image}
                             title={movie.title}
                             summary={movie.summary}
-                            genres={movie.genres}
+                            genres={genres.length > 2 ? genres[0, 1] : genres}
                         />
                     ))}
                 </div>
