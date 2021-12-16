@@ -1,0 +1,14 @@
+body {
+    margin: 100px 0px 0px 100px;
+}
+
+.all {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0px 0px 100px;
+}
