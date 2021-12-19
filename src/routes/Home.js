@@ -12,7 +12,7 @@ function Home() {
         ).json();
         setMovies(json.data.movies);
         setLoading(false);
-        console.log(json)
+        console.log(json);
     };
     const genres = moive.genres
     useEffect(() => {
